@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700&display=swap');
+@import './_variables.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: $font;
+  // outline: 1px dashed;
+}
+
+a {
+  color:inherit;
+}
+
+button {
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+

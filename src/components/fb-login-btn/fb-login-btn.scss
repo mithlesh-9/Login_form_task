@@ -1,0 +1,31 @@
+$fb_blue:#3b5998;
+.login-with-fb {
+    background: $fb_blue;
+    width:100%;
+    border: none;
+    margin: 1.5em 0;
+    padding: 1.5em 5em;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .description {
+        margin-left: 25px;
+    }
+    &:focus {
+        box-shadow: 0 0 10px $fb_blue;
+        outline: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-with-fb {
+        padding: 1.5em 2em;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,46 @@
+@import '../../_variables.scss';
+
+.form-group {
+    position: relative;
+    margin:2.5em 0;
+    width:100%;
+    label {
+        display: block;
+        position: absolute;
+        top: 1px;
+        color: $light_grey;
+        transition: .5s;
+        text-transform: uppercase;
+        font-size: .8em;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+    }
+    .form-input {
+        border: none;
+        border-bottom: 2px solid $light_grey;
+        width:inherit;
+        transition: .5s;
+
+        &:focus,
+        &:valid {
+            border-color:$light_green;
+            outline: none;
+        }
+    }
+    .form-input:valid ~ label,
+    .form-input:focus ~ label {
+        top: -15px;
+        font-size: .7em;
+        color:$light_green;
+    }
+
+    .form-input:valid ~ label,
+    .form-input:focus ~ label {
+        top: -15px;
+        font-size: .7em;
+        color:$light_green;
+    }
+
+   
+}

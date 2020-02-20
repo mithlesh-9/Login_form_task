@@ -1,0 +1,23 @@
+@import '../../_variables.scss';
+.btn-submit {
+    background: $light_green;
+    border-radius: 30px;
+    border:none;
+    padding: 1em 0;
+    width:100%;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    &:disabled {
+        background: $light_grey;
+        cursor: not-allowed;
+    }
+    &:focus {
+        box-shadow: 0 0 10px $light_green;
+        outline: none;
+    }
+
+}
+
